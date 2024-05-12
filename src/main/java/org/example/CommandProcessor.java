@@ -7,6 +7,11 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ *CommandProcessor class provides functionality to parse input from stdin which should represent commands.
+ *
+ * It maps the commands to the actual {@code Command} object and then executes it.
+ */
 public class CommandProcessor {
     private Map<String, Command> commandMap = new HashMap<>();
     static private CommandProcessor instance = null;
@@ -25,6 +30,13 @@ public class CommandProcessor {
         commandMap.put("audit", new AuditCommand());
     }
 
+    /**
+     * Parses the input and provides the {@code execute} command with the necessary parameters for execution.
+     * @param input
+     * @param account
+     * @param connection
+     * @return
+     */
     public boolean processAndExecute(String input, Account account, Connection connection) {
         String[] parts = input.split(parserRegex);
         Command command = commandMap.get(parts[0]);

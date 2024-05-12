@@ -2,6 +2,9 @@ package org.example;
 
 import java.util.Date;
 
+/**
+ *Audit information about a certain command which has been entered.
+ */
 public class AuditEntry implements Listable{
     private int id_account;
     private String command;

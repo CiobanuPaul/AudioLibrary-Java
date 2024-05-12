@@ -23,6 +23,9 @@ public class Account {
         this.authorization = authorization;
     }
 
+    /**
+     * Resets the info of the account to non-authenticated.
+     */
     public void resetInfo(){
         name = null;
         id_account = -1;
