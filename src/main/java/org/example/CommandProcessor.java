@@ -21,7 +21,7 @@ public class CommandProcessor {
         commandMap.put("list playlists", new ListPlaylistsCommand());
         commandMap.put("add", new AddToPlaylistCommand());
         commandMap.put("search", new SearchCommand());
-//        commandMap.put("export", new ExportPlaylistCommand());
+        commandMap.put("export playlist", new ExportPlaylistCommand());
         commandMap.put("audit", new AuditCommand());
     }
 
