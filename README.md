@@ -8,23 +8,37 @@ When started, the following message with instructions appears:
 Welcome to AudioLibrary!
 
 First you need to login/register using the command:
+
 login <username> <password>
+
 or
+
 register <username> <password>
 
 After authenticating, you can use the following commands:
+
 logout
+
 list playlists
-add byName "<playlistName>" <melodyId>[ <melodyId2> <melodyId3> ...]
-add byId <playlistId> <melodyId>[ <melodyId2> <melodyId3> ...]
+
+add byName "<playlistName>" <melodyId> <melodyId2> <melodyId3> ...
+
+add byId <playlistId> <melodyId> <melodyId2> <melodyId3> ...
+
 search name "<textToSearch>"
+
 search author "<textToSearch>"
+
 export playlist <playlistName> <format>   (format can be csv or json or txt)
+
 export playlist <playlistId> <format>   (format can be csv or json or txt)
 
 If you have administrator rights than you can use the following commands:
+
 promote <username>
+
 create song "<name>" "<author>" <year>
+
 audit <username>
 
 Enjoy the app!
